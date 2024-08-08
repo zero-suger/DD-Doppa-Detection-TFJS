@@ -20,4 +20,4 @@
 Thanks [Hyuto](https://github.com/Hyuto) (YOLO TFJS deployment), [Lilian Hollard](https://github.com/Hyuto) (LeYOLO: Ligtweight and efficient YOLO) and  [Ultralytics](https://docs.ultralytics.com/) to such a hard  work. 
 
 ## Contact
-If you have questions, please contact with me uacoding01@gmail.com
+Any questions or remarks? Contact with me uacoding01@gmail.com
