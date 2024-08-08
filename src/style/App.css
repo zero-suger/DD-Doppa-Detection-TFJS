@@ -9,7 +9,7 @@
 }
 
 .App > * {
-  margin: 3px 0;
+  margin: 10px 0;
 }
 
 .header {
@@ -56,10 +56,10 @@
 }
 
 button {
-  text-decoration: none;
+  text-decoration:solid;
   color: white;
-  background-color: black;
-  border: 2px solid black;
+  background-color: #0275d8;
+  border: 2px solid #f7f7f7;
   margin: 0 5px;
   padding: 5px;
   border-radius: 5px;
@@ -67,7 +67,18 @@ button {
 }
 
 button:hover {
-  color: black;
+  color: #0275d8;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #0275d8;
+}
+
+
+.image-container {
+  text-align: center; /* Center align the image container */
+  margin: 20px 0; /* Add vertical spacing */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }

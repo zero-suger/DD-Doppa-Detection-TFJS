@@ -20,12 +20,12 @@ const App = () => {
   const canvasRef = useRef(null);
 
   // model configs
-  const modelName = "yolov8n";
+  const modelName = "LeYOLO-v1 Small";
 
   useEffect(() => {
     tf.ready().then(async () => {
       const yolov8 = await tf.loadGraphModel(
-        `${window.location.href}/${modelName}_web_model/model.json`,
+        `${window.location.href}/yolo/model.json`,
         {
           onProgress: (fractions) => {
             setLoading({ loading: true, progress: fractions }); // set loading fractions
@@ -49,14 +49,14 @@ const App = () => {
 
   return (
     <div className="App">
-      {loading.loading && <Loader>Loading model... {(loading.progress * 100).toFixed(2)}%</Loader>}
+      {loading.loading && <Loader>Please wait, LeYOLO-v1 'Doppi Detection' model is loading ... </Loader>}
       <div className="header">
-        <h1>📷 YOLOv8 Live Detection App</h1>
+        <h1>[DD] LeYOLO-v1 </h1>
         <p>
-          YOLOv8 live detection application on browser powered by <code>tensorflow.js</code>
+           DOPPA (traditional square hat worn by Uyghurs, Uzbeks, Kazan Tatars, etc) Detection project on browser by using tensorflow.js and LeYOLO-v1.
         </p>
         <p>
-          Serving : <code className="code">{modelName}</code>
+          
         </p>
       </div>
 

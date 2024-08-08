@@ -52,8 +52,10 @@ export const detect = async (source, model, canvasRef, callback = () => {}) => {
   const [input, xRatio, yRatio] = preprocess(source, modelWidth, modelHeight); // preprocess image
 
   const res = model.net.execute(input); // inference model
+  console.log('Model output shape:', res.shape); // Log tensor shape for debugging
   const transRes = res.transpose([0, 2, 1]); // transpose result [b, det, n] => [b, n, det]
   const boxes = tf.tidy(() => {
+    console.log('transRes shape:', transRes.shape);
     const w = transRes.slice([0, 0, 2], [-1, -1, 1]); // get width
     const h = transRes.slice([0, 0, 3], [-1, -1, 1]); // get height
     const x1 = tf.sub(transRes.slice([0, 0, 0], [-1, -1, 1]), tf.div(w, 2)); // x1
@@ -74,6 +76,7 @@ export const detect = async (source, model, canvasRef, callback = () => {}) => {
   const [scores, classes] = tf.tidy(() => {
     // class scores
     const rawScores = transRes.slice([0, 0, 4], [-1, -1, numClass]).squeeze(0); // #6 only squeeze axis 0 to handle only 1 class models
+    console.log('rawScores shape:', rawScores.shape);
     return [rawScores.max(1), rawScores.argMax(1)];
   }); // get max scores and classes index
 
