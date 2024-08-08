@@ -12,9 +12,12 @@
  - TESTED on Microsoft Windows 11 Pro x64-based-PC 
  - DEPLOYMENT on VERCEL
 
-## TEST Doppa Detection with Vercel (:
+## Quickstart with Vercel (:
 
 [CLICK ME](https://dd-doppa-detection.vercel.app/)
 
+## Special thanks
+Thanks [Hyuto](https://github.com/Hyuto) (YOLO TFJS deployment), [Lilian Hollard](https://github.com/Hyuto) (LeYOLO: Ligtweight and efficient YOLO) and  [Ultralytics](https://docs.ultralytics.com/) to such a hard  work. 
 
-Thanks [Hyuto](https://github.com/Hyuto) (YOLO TFJS deployment), [Lilian Hollard](https://github.com/Hyuto) (LeYOLO: Ligtweight and efficient YOLO) and  [Ultralytics](https://docs.ultralytics.com/) to such a hard  work. If you have questions, please contact with me uacoding01@gmail.com
+## Contact
+If you have questions, please contact with me uacoding01@gmail.com
