@@ -17,7 +17,7 @@
 
 [CLICK ME](https://dd-doppa-detection.vercel.app/)
 
-!!! **Inference can be performed by either uploading an image or video, or by accessing your camera directly.** !!!
+!!! **Inference can be performed by either uploading an image or video, or by accessing your camera directly. Try to test with high quaility and clear background images not with low IQA images.** !!!
 
 ## Special thanks
 Thanks [Hyuto](https://github.com/Hyuto) (YOLO TFJS deployment), [Lilian Hollard](https://github.com/Hyuto) (LeYOLO: Ligtweight and efficient YOLO) and  [Ultralytics](https://docs.ultralytics.com/) to such a hard  work. 
