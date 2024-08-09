@@ -4,7 +4,8 @@
 [DD] Doppa-Detection : DOPPA (traditional square hat worn by Uyghurs, Uzbeks, Kazan Tatars, etc) Detection project on browser by using tensorflow.js and LeYOLO-v1. 
 
 ## What is different than [Hyuto](https://github.com/Hyuto) (YOLO TFJS deployment) ?
-
+ 
+ - TRAINED with custom data (originally Object Detection with 80 classes) 
  - UI with Bootstrap CSS Library
  - UPGRADING YOLOv8 -> LeYOLO (42% less GFLOP than YOLOv9-T)
  - QUANTIZATION (F32 3.61MB -> F16 1.3MB~)
